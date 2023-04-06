@@ -1,0 +1,15 @@
+.gallery2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 30px;
+}
+
+.gallery2 img {
+    width: 600px;
+}
+
+#artwork3 {
+    order: -3;
+}
