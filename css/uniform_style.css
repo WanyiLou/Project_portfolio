@@ -1,0 +1,116 @@
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: #F3EADF;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+nav li {
+    font-size: 20px;
+}
+
+.curpage {
+    font-weight: bold;
+}
+
+.introduction {
+    margin: 50px;
+}
+
+.introduction p {
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.hobbies {
+    font-size: 20px;
+    margin: 0px 50px 50px 50px;
+}
+
+.hobbies h2 {
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.myhobby {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.myhobby p {
+    background-color: #F3EADF;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+/*style the skip class*/
+.skip a{
+    left: 0;
+    padding: 10px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}  
+  
+.skip a:focus {
+    position: absolute;
+    top: 2px;
+}
+
+/*setting the links to the original color even after they have been visited*/
+a:link, a:visited {
+    color: black; 
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        text-align: center;
+    }
+    nav li {
+        display: inline;
+        padding-right: 50px;
+    }
+    .myhobby {
+        justify-content: center;
+    }
+    .myhobby p {
+        padding: 15px;
+        border-radius: 20px;
+        margin: 10px;
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    nav {
+        text-align: right;
+    }
+    nav li {
+        padding-right: 30px;
+    }
+    .hobbies {
+        font-size: 20px;
+        margin: 0px 200px;
+    }
+}

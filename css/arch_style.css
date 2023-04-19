@@ -1,0 +1,46 @@
+.gallery1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    gap: 5px;
+    margin: 15px 15px 50px 15px;
+}
+
+#archwork3, #archwork4, #archwork5, #archwork6, #archwork9 {
+    grid-column: 1 / span 2;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery1 {
+        gap: 10px;
+        margin: 50px;
+    }
+    #archwork3, #archwork4, #archwork5, #archwork6 {
+        grid-column: auto;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .gallery1 {
+        grid-template-columns: 30% 30% 30%;
+        gap: 30px;
+        margin: 30px;
+    }
+    
+    #archwork1, #archwork2 {
+        grid-row: 1 / span 2;
+    }
+    
+    #archwork7 {
+        grid-area: 3 / 1 / span 2 / 2;
+    }
+    
+    #archwork6 {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+    
+    #archwork9 {
+        grid-area: 5 / 1 / 6 / span 2;
+    }
+}
